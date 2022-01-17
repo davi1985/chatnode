@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+body {
+  font: 1rem sans-serif;
+  background: #42113c;
+  font-family: "Open Sans", 400, sans-serif;
+}
+
+.page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#loginPage {
+  display: flex;
+  background: #1c0118;
+  color: #fff;
+}
+
+#inputName {
+  padding: 1rem;
+  max-width: 320px;
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 0.25rem;
+  outline: 0;
+  font-size: 1.1rem;
+  background: #618b25;
+  color: white;
+  text-align: center;
+}
+
+#inputName::placeholder {
+  color: white;
+  font-style: italic;
+  font-size: 1rem;
+  text-align: center;
+}
+
+#chatPage {
+  display: none;
+}
+
+.chat {
+  flex: 1;
+  width: 100%;
+  display: flex;
+}
+
+.messages {
+  background: #1c0118;
+  flex: 1;
+  color: #fff;
+  overflow-y: scroll;
+  max-height: calc(100vh - 40px);
+}
+
+.messages li {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.messages li.status {
+  color: #ddd;
+  font-style: italic;
+}
+
+.messages li.message span {
+  font-weight: 800;
+  color: #dd37ca;
+}
+
+.messages li.message span.user-message {
+  color: #618b25;
+  font-weight: 800;
+}
+
+.users {
+  width: 200px;
+  background: #370926;
+  color: #fff;
+  padding: 1rem 0.5rem 0;
+  overflow-y: scroll;
+  max-height: calc(100vh - 40px);
+}
+
+.users li {
+  padding: 0.5rem;
+  background: #618b25;
+  border-radius: 1rem 0;
+  text-align: center;
+}
+
+.users li + li {
+  margin-top: 0.5rem;
+}
+
+.chatInput {
+  width: 100%;
+  display: flex;
+}
+
+#chatInput {
+  flex: 1;
+  height: 40px;
+  background: #42113c;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 0.25rem;
+  outline: 0;
+  border: 0;
+}
